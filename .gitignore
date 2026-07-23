@@ -1,0 +1,12 @@
+# ─── Collected inventory output ──────────────────────────────
+*_Specs.csv
+*_Monitors.csv
+*_AssetInfo.csv
+
+# ─── macOS cruft ─────────────────────────────────────────────
+.DS_Store
+._*
+
+# ─── Windows cruft ───────────────────────────────────────────
+Thumbs.db
+Desktop.ini
