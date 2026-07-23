@@ -7,9 +7,13 @@
 
 
   > A Portable IT Asset Collector For **Windows** and **macOS**
+  <br>
   > Drop it on a USB stick, run it on each machine, and will output in CSV 
+  <br>
   > format the hardware, OS, network, and every connected monitor including 
-  > serial numbers! The output easily load into Excel, or your own scripts
+  <br>
+  > serial numbers! The output easily load into Excel, or your own scripts 
+  <br>
   > Below is a showcase of the two CSV files outputted.
 
 
@@ -19,7 +23,7 @@
 "ComputerName", "Manufacturer", "Model", "SerialNumber", "AssignedTo", "IPAddress", "MACAddress", 
 "OperatingSystem", "OSVersion", "CPU", "RAM(GB)", "Storage(GB)", "MonitorCount", "CollectedOn"
 ```
-
+<br><br>
 
 **`HOSTNAME_Monitors.csv`:**
 
@@ -27,7 +31,7 @@
 "ComputerName", "AssignedTo", "MonitorNumber", "Manufacturer", "Model", "Serial", "Year", "CollectedOn"
 ```
 
-
+<br><br>
 
 - macOS monitor serials/year are often *not* exposed by the OS. The model name is reliable; `Serial` and `Year` may be blank.
 
