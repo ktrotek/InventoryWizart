@@ -6,14 +6,10 @@
 ```
 
 
-  > A Portable IT Asset Collector For **Windows** and **macOS**
-  <br>
+  > A Portable IT Asset Collector For **Windows** and **macOS**.
   > Drop it on a USB stick, run it on each machine, and will output in CSV 
-  <br>
   > format the hardware, OS, network, and every connected monitor including 
-  <br>
   > serial numbers! The output easily load into Excel, or your own scripts 
-  <br>
   > Below is a showcase of the two CSV files outputted.
 
 
