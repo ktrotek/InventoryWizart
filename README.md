@@ -4,7 +4,7 @@
   █  ▐▌ ▝▜▌▐▌  ▐▌▐▌ ▐▌▐▌ ▝▜▌  █ ▐▌ ▐▌▐▛▀▚▖ ▐▌      ▐▌ ▐▌  █   ▗▞▘  ▐▛▀▜▌▐▛▀▚▖ █  
 ▗▄█▄▖▐▌  ▐▌ ▝▚▞▘ ▐▙█▟▌▐▌  ▐▌  █ ▝▚▄▞▘▐▌ ▐▌ ▐▌      ▐▙█▟▌▗▄█▄▖▐▙▄▄▄▖▐▌ ▐▌▐▌ ▐▌ █             
 ```
-
+<br>
 
   > A Portable IT Asset Collector For **Windows** and **macOS**.
   > Drop it on a USB stick, run it on each machine, and will output in CSV 
@@ -12,14 +12,16 @@
   > serial numbers! The output easily load into Excel, or your own scripts 
   > Below is a showcase of the two CSV files outputted.
 <br>
-**`HOSTNAME_Specs.csv`:**
+
+HOSTNAME_Specs.csv
 
 ```
 "ComputerName", "Manufacturer", "Model", "SerialNumber", "AssignedTo", "IPAddress", "MACAddress", 
 "OperatingSystem", "OSVersion", "CPU", "RAM(GB)", "Storage(GB)", "MonitorCount", "CollectedOn"
 ```
 <br>
-**`HOSTNAME_Monitors.csv`:**
+
+HOSTNAME_Monitors.csv
 
 ```
 "ComputerName", "AssignedTo", "MonitorNumber", "Manufacturer", "Model", "Serial", "Year", "CollectedOn"
