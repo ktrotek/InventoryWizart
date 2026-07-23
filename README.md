@@ -27,10 +27,3 @@
 <br>
 - macOS monitor serials/year are often *not* exposed by the OS. The model name is reliable; `Serial` and `Year` may be blank.
 
-<br><br>
-
-
-
-## License
-Licensed under the **GNU General Public License v3.0** — see [LICENSE](LICENSE).
-Copyright (C) 2026 ktrotek.
