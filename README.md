@@ -1,12 +1,15 @@
 ```
-▪   ▐ ▄  ▌ ▐·▄▄▄ . ▐ ▄ ▄▄▄▄▄      ▄▄▄   ▄· ▄▌▄▄▌ ▐ ▄▌▪  ·▄▄▄▄• ▄▄▄· ▄▄▄  ▄▄▄▄▄
-██ •█▌▐█▪█·█▌▀▄.▀·•█▌▐█•██  ▪     ▀▄ █·▐█▪██▌██· █▌▐███ ▪▀·.█▌▐█ ▀█ ▀▄ █·•██  
-▐█·▐█▐▐▌▐█▐█•▐▀▀▪▄▐█▐▐▌ ▐█.▪ ▄█▀▄ ▐▀▀▄ ▐█▌▐█▪██▪▐█▐▐▌▐█·▄█▀▀▀•▄█▀▀█ ▐▀▀▄  ▐█.▪
-▐█▌██▐█▌ ███ ▐█▄▄▌██▐█▌ ▐█▌·▐█▌.▐▌▐█•█▌ ▐█▀·.▐█▌██▐█▌▐█▌█▌▪▄█▀▐█ ▪▐▌▐█•█▌ ▐█▌·
-▀▀▀▀▀ █▪. ▀   ▀▀▀ ▀▀ █▪ ▀▀▀  ▀█▄▀▪.▀  ▀  ▀ •  ▀▀▀▀ ▀▪▀▀▀·▀▀▀ • ▀  ▀ .▀  ▀ ▀▀▀ 
-
-
+▄▄▄▄▄▄▄▄▄    ▄▄▄▄        ▄▄▄▄▄▄▄  ▄▄▄    ▄▄▄▄        ▄▄▄ ▄▄▄    ▄▄▄▄▄▄▄▄▄   ▄▄▄    ▄▄▄         ▄▄▄▄▄▄ ▄▄▄▄▄▄▄▄▄   ▄▄▄▄   ▄▄▄▄▄▄▄▄▄           ▄▄▄
+ ▓▒▒░  ▒▒▒    ░░▌██  █▄   ███░▀ ▀  ▒▒▒    ░░▌   ▄▄▒░░▀  ██░██▄   ░░░ ▀ ▀░█   ░░▌  ▀ ▀█░██  █▄   ▓▒▒░ ▒░░█████░░  ▒▓▀▒▒▌   ░░░ ▀ ▀░█     ▄▄▒░░▀  
+ ▐░ ▌  ▐░░▌   ▐░ ▐░▌ ▐░   ▐░█▌     ▐░░▌   ▐░  ▄█▀░░ ▌   ▐░▒▀▒░   ▐░█▌   ▐░▌  ▐▒░    ▐░▌▐░▌ ▐░   ▐░ ▌ ░▀    ▄░█▒ ▐░  ▐▒░   ▐░█▌   ▐░▌  ▄█▀░░ ▌   
+   ░    ██▀▄  ▐█  ▒▌  ▒░▌  ░░▄▄     ██▀▄  ▐█ ▄▀  ▐ ░     ▒▌  ▒░▌  █░   ▄░░░   ▓▒▒  ███  ▒▌  ▒░▌   ░      ▄▒░░▀     ▄░░ ▌   █░   ▄░░░ ▄▀  ▐ ░    
+  ░▒    ░▌▀▀░░▐█  ▓    ▒█  ▒▒▀▀▀▄   ░▌▀▀░░▐█      ░▒     ▓    ▒█  ░▒▄▄▓▓▒▀      ▓▒░░    ▓    ▒█  ░▒    ▄▓▓▒▀   ▐░▄▀▀▄ █░   ░▒▄▄▓▓▒▀       ░▒    
+  ▒▓    ▒▌  ▒▒░▌  █     ▒  ▓▌  ▄    ▒▌  ▒▒░▌      ▒▓     █     ▒  ▒▓█▀█▓         ▓▒     █ █▄  ▒  ▒▓  ▄▓▓▓▀     ▓▒▌   ░░▒▌  ▒▓█▀█▓         ▒▓    
+ ▐▓█▌  ▐▓▌   ▓▒▒ ▐█▌   ▓█ ▐█▓  ▐█  ▐▓▌   ▓▒▒     ▐▓█▌   ▐█▌   ▓█ ▐▓█   ▀▓█       █▓    ▐█▌█▓ ▓█ ▐▓█▌ █▓▀     ▄▓█▓    ▐▒▓▌ ▐▓█   ▀▓█      ▐▓█▌   
+ ████  ██▓    ▓▓▌ ▐█▄▄█▌  ████▄█▓▌ ██▓    ▓▓▌    ████   ▐██▄▄██▌▄███    ▐██▄    ▐██▌   ▐██████▌ ████ ██████████▐█▓    ▓█ ▄███    ▐██▄    ████   
 ```
+
+
   > A Portable IT Asset Collector For **Windows** and **macOS**
   > Drop it on a USB stick, run it on each machine, and will output in CSV 
   > format the hardware, OS, network, and every connected monitor including 
@@ -21,6 +24,7 @@
 "OperatingSystem", "OSVersion", "CPU", "RAM(GB)", "Storage(GB)", "MonitorCount", "CollectedOn"
 ```
 
+
 **`HOSTNAME_Monitors.csv`:**
 
 ```
@@ -28,7 +32,10 @@
 ```
 
 
-- **macOS monitor serials/year** are often *not* exposed by the OS, especially on Apple Silicon. The model name is reliable; `Serial` and `Year` may be blank. Built-in laptop displays have no separate serial. This is a platform limitation, not a bug.
+
+- macOS monitor serials/year are often *not* exposed by the OS. The model name is reliable; `Serial` and `Year` may be blank.
+
+
 
 
 
