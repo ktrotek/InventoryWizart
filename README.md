@@ -1,9 +1,6 @@
-```
-▗▄▄▄▖▗▖  ▗▖▗▖  ▗▖▗▖ ▗▖▗▖  ▗▖▗▄▄▄▖▗▄▖ ▗▄▄▖▗▖  ▗▖    ▗▖ ▗▖▗▄▄▄▖▗▄▄▄▄▖ ▗▄▖ ▗▄▄▖▗▄▄▄▖
-  █  ▐▛▚▖▐▌▐▌  ▐▌▐▌ ▐▌▐▛▚▖▐▌  █ ▐▌ ▐▌▐▌ ▐▌▝▚▞▘     ▐▌ ▐▌  █     ▗▞▘▐▌ ▐▌▐▌ ▐▌ █  
-  █  ▐▌ ▝▜▌▐▌  ▐▌▐▌ ▐▌▐▌ ▝▜▌  █ ▐▌ ▐▌▐▛▀▚▖ ▐▌      ▐▌ ▐▌  █   ▗▞▘  ▐▛▀▜▌▐▛▀▚▖ █  
-▗▄█▄▖▐▌  ▐▌ ▝▚▞▘ ▐▙█▟▌▐▌  ▐▌  █ ▝▚▄▞▘▐▌ ▐▌ ▐▌      ▐▙█▟▌▗▄█▄▖▐▙▄▄▄▖▐▌ ▐▌▐▌ ▐▌ █             
-```
+<p align="center">
+  <img src="assets/banner.png" alt="InventoryWizart — pc + monitor asset collector" width="820">
+</p>
 <br>
 
   > A Portable IT Asset Collector For **Windows** and **macOS**.
@@ -27,5 +24,7 @@ HOSTNAME_Monitors.csv
 "ComputerName", "AssignedTo", "MonitorNumber", "Manufacturer", "Model", "Serial", "Year", "CollectedOn"
 ```
 <br>
-- macOS monitor serials/year are often *not* exposed by the OS. The model name is reliable; `Serial` and `Year` may be blank.
+- macOS monitor serials/year are often *not* exposed by the OS. The model name is reliable; "Serial" and "Year" may be blank.
+- "RAM(GB)" is reported as a whole number, snapped to the real installed size, so a 16 GB PC reads `16` and not `15.9`.
+- Numbers never use a decimal comma. Both scripts write in the invariant/C locale, so a Greek and an English machine produce identical files.
 
