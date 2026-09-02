@@ -4,9 +4,9 @@
 <br>
 
   > A Portable IT Asset Collector For **Windows** and **macOS**.
-  > Drop it on a USB stick, run it on each machine, and will output in CSV 
+  > Drop it on a USB stick, run it on a machine, and it will output in CSV 
   > format the hardware, OS, network, and every connected monitor including 
-  > serial numbers! The output easily load into Excel, or your own scripts 
+  > serial numbers! The output easily loads into Excel, or your own scripts 
   > Below is a showcase of the two CSV files outputted.
 <br>
 
