@@ -30,6 +30,10 @@
 # Work next to this script (the USB stick), not the home folder
 DIR="$(cd "$(dirname "$0")" && pwd)"
 
+# Force '.' as the decimal mark everywhere, never ',' - keeps CSVs from Greek
+# and English machines identical (and ',' would clash with the CSV delimiter).
+export LC_NUMERIC=C
+
 PC="$(hostname -s | tr '[:lower:]' '[:upper:]')"
 SPECS="$DIR/${PC}_Specs.csv"
 MONITORS="$DIR/${PC}_Monitors.csv"
@@ -78,7 +82,15 @@ if [ -n "$IFACE" ]; then
 fi
 
 echo "  [####--] 4/6  Reading disks and memory..."
-RAM_GB="$(sysctl -n hw.memsize | awk '{printf "%.1f", $1/1073741824}')"
+# Round RAM to the nearest real-world module size (16, 24, 32...). Falls back
+# to plain nearest-integer for unusual totals so odd configs stay honest.
+RAM_GB="$(sysctl -n hw.memsize | awk '{
+  raw=$1/1073741824; n=int(raw+0.5);
+  c=split("1 2 3 4 6 8 12 16 20 24 32 40 48 64 80 96 128 192 256 384 512 768 1024", s, " ");
+  for(i=1;i<=c;i++){ tol=raw*0.06; if(tol<0.5) tol=0.5;
+    if(s[i]>=raw && (s[i]-raw)<=tol){ n=s[i]; break } }
+  printf "%d", n
+}')"
 STOR_BYTES=0
 while read -r dev; do
   b="$(diskutil info "$dev" 2>/dev/null | awk -F'[()]' '/Disk Size/{split($2,a," "); print a[1]; exit}')"

@@ -1,6 +1,11 @@
 *_Specs.csv
 *_Monitors.csv
 *_AssetInfo.csv
+*_Upgrate.csv
+Company_Printers.csv
+Printers.csv
+RamWizart_Summary.csv
+RamWizart_Slots.csv
 .DS_Store
 ._*
 Thumbs.db
