@@ -20,20 +20,6 @@
   ─────────────────────────────────────────────────────────────────────────
 ```
 
-- `1`–`4` jump straight to an option, `Esc`/`Q` exits, `Home`/`End` go to the
-  ends of the list. The selection wraps at both ends.
-- cmd cannot read an arrow key, so the menu is drawn by PowerShell. In a console
-  that cannot give it a raw key reader — a redirected or remote shell — it falls
-  back to typing a number rather than dropping you out of the tool.
-
-- Numbers never use a decimal comma. Everything is written in the invariant/C
-  locale, so a Greek and an English machine produce identical files.
-- `CollectedOn` carries its UTC offset (`2026-09-09 14:30 +03:00`). Excel has no
-  timezone-aware date type, so it keeps the column as text and shows it in full
-  instead of the `#####` a too-narrow date column renders. ISO order means it
-  still sorts correctly.
-- If Excel shows everything in one column (Greek locale uses `;` as separator),
-  use **Data > From Text/CSV** to import.
 - `InventoryWizart.command` is the macOS build and covers option 1 only —
   printers and upgrade paths are read from WMI, which macOS does not have.
 
@@ -50,8 +36,8 @@
 HOSTNAME_Specs.csv
 
 ```
-"ComputerName", "Manufacturer", "Model", "SerialNumber", "AssignedTo", "IPAddress", "MACAddress", 
-"OperatingSystem", "OSVersion", "CPU", "RAM(GB)", "Storage(GB)", "MonitorCount", "CollectedOn"
+"ComputerName",  "Manufacturer",  "Model",  "SerialNumber",  "AssignedTo",  "IPAddress",  "MACAddress", 
+"OperatingSystem",  "OSVersion",  "CPU",  "RAM(GB)",  "Storage(GB)",  "MonitorCount",  "CollectedOn"
 ```
 
 HOSTNAME_Monitors.csv
@@ -72,7 +58,7 @@ HOSTNAME_Monitors.csv
   > Every printer that is **connected and online**, as one row per *physical
   > printer* rather than per PC. One file for the whole site: the first run
   > creates it, every run after that merges into the same file. An office with
-  > ten PCs and three shared printers ends up with three rows, not thirty.
+  > ten PCs and three shared printers ends up with three rows.
 
 Company_Printers.csv
 
